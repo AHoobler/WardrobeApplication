@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WardrobeApp_AH.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessoryID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Accessory.AccessoryName)
+        </td>
+        <td>
+           <img src=" @Html.DisplayFor(modelItem => item.Bottom.BottomPhoto)" class="img-rounded" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shoe.ShoeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Top.TopName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
+        </td>
+    </tr>
+}
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+

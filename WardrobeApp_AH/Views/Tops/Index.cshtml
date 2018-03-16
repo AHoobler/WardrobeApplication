@@ -1,0 +1,33 @@
+﻿<link href="~/Content/TopStyle.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApp_AH.Models.Top>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Dobby has Shirts </h2>
+
+
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopName)
+        </td>
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.TopPhoto)" class="img-rounded" />
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
+        </td>
+    </tr>
+}
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+

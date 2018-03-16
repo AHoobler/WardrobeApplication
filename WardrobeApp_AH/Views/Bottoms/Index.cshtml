@@ -1,0 +1,32 @@
+﻿<link href="~/Content/BottomStyle.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApp_AH.Models.Bottom>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Dobby likes Pants </h2>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div>
+           <img src=" @Html.DisplayFor(modelItem => item.BottomPhoto)" class="img-rounded" />
+        </div>   
+        <div>
+            @Html.DisplayFor(modelItem => item.BottomName)
+        </div>
+        <div>
+            @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
+        </div>
+    </div>
+}
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

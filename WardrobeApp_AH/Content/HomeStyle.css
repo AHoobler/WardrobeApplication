@@ -1,0 +1,19 @@
+﻿body {
+    background: url('images/socks.jpeg');
+    text-align: center;
+
+}
+
+.jumbotron{
+    background: none;
+
+}
+
+h1{
+    color: darkgreen;
+}
+
+img{
+    height: 350px;
+    width: 320px;
+}
