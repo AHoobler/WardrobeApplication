@@ -10,18 +10,17 @@
 
 @foreach (var item in Model)
 {
-    <div class="row">
-        <div>
+    <div class="thumbnail">
+        
            <img src=" @Html.DisplayFor(modelItem => item.BottomPhoto)" class="img-rounded" />
-        </div>   
-        <div>
-            @Html.DisplayFor(modelItem => item.BottomName)
-        </div>
-        <div>
+        
+           <p> @Html.DisplayFor(modelItem => item.BottomName)</p>
+        
+        <p>
             @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
             @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
-        </div>
+        </p>
     </div>
 }
 

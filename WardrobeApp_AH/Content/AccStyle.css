@@ -6,14 +6,20 @@
 img{
     height: 175px;
     width: 175px;
+    margin: 15px
 }
 
 .thumbnail{
     background: rgba(255, 255, 255, 0.6);
-    height: 250px;
-    width: 250px;
+   
 }
 
 row{
     text-align: center;
+}
+
+p{
+    color: darkgreen;
+    font-size: large;
+
 }

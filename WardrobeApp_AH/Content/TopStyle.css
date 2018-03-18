@@ -1,9 +1,27 @@
 ﻿body {
-    background-image: url('images/flannel.jpeg');
+    background-color: dimgrey;
+    background-size: cover;
+    height: 1500px;
+    color: darkgreen;
+    text-align: center;
 }
 
 
-img{
-    width: 175px;
+img {
     height: 175px;
+    width: 175px;
+    margin: 15px
+}
+
+.thumbnail {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+row {
+    text-align: center;
+}
+
+p {
+    color: darkgreen;
+    font-size: large;
 }

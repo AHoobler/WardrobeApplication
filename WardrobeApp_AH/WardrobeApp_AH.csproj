@@ -197,6 +197,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BottomStyle.css" />
+    <Content Include="Content\DetailsStyle.css" />
     <Content Include="Content\HomeStyle.css" />
     <Content Include="Content\images\bwshirts.jpeg" />
     <Content Include="Content\images\cableknit.jpg" />

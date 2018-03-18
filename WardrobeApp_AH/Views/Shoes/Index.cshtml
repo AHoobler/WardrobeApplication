@@ -9,26 +9,28 @@
 <h2>Dobby has shoes to protect his socks.</h2>
 
 
-<div class="thumbnail">
-    @foreach (var item in Model)
-    {
-        <div class="row">
-            <div>
-                @Html.DisplayFor(modelItem => item.ShoeName)
-            </div>
-            <div>
-                <img src=" @Html.DisplayFor(modelItem => item.ShoePhoto)" class="img-rounded" />
-            </div>
 
-            <div>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
-            </div>
-        </div>
-    }
-</div>
+@foreach (var item in Model)
+{     
+    
+        <div class="thumbnail">
+            
+                <img src=" @Html.DisplayFor(modelItem => item.ShoePhoto)" class="img-rounded" />
+          
+                <p> @Html.DisplayFor(modelItem => item.ShoeName) </p>
+           
+                <p class="link">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
+                </p>
+           </div>
+       
+
+}
+
+<div class="col-md-12">
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-
+</div>

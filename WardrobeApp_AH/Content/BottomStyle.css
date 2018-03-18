@@ -1,8 +1,23 @@
 ﻿body {
-    background-image: url('images/jeans.jpeg');
+    background: linear-gradient(grey, lightblue) no-repeat;
+    height: 1500px;
+    text-align: center;
+}
+img {
+    height: 175px!important;
+    width: 175px!important;
+    margin: 15px
 }
 
-img{
-    width: 175px;
-    height: 175px;
+.thumbnail {
+    background: rgba(255, 255, 255, 0.6)!important;
+}
+
+row {
+    text-align: center;
+}
+
+p {
+    color: darkgreen;
+    font-size: large;
 }

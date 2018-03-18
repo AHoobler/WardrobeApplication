@@ -1,57 +1,26 @@
-﻿@model WardrobeApp_AH.Models.Top
+﻿<link href="~/Content/DetailsStyle.css" rel="stylesheet" />
+@model WardrobeApp_AH.Models.Top
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Tops Details</h2>
+<h2>  @Html.DisplayFor(model => model.TopName) Details</h2>
 
-<div>
-    <h4>Top</h4>
+
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TopName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopName)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopColor)
-        </dd>
+    <img src=" @Html.DisplayFor(model => model.TopPhoto)" class=img-rounded />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </dt>
+    <p> Color: @Html.DisplayFor(model => model.TopColor) </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopPhoto)
-        </dd>
+    <p> Season: @Html.DisplayFor(model => model.TopSeason) </p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </dt>
+    <p> Occassion: @Html.DisplayFor(model => model.TopOccasion) </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopSeason)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopOccasion)
-        </dd>
-
-    </dl>
-</div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
     @Html.ActionLink("Back to List", "Index")

@@ -1,15 +1,27 @@
 ﻿body {
-    background: url('images/leather.jpeg')no-repeat center center;
+    background-color: dimgrey;
     background-size: cover;
+    height: 1500px;
+    color: darkgreen;
+    text-align:center;
 }
 
-img{
+
+img {
     height: 175px;
     width: 175px;
+    margin: 15px
 }
 
-.thumbnail{
-    height: 250px;
-    width: 250px;
-    background: rgba(255,255,255,.6);
+.thumbnail {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+row {
+    text-align: center;
+}
+
+p {
+    color: darkgreen;
+    font-size: large;
 }
