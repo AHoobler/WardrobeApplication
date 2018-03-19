@@ -1,5 +1,5 @@
 ﻿body {
-    background: url('images/cableknit.jpg')no-repeat center center;
+    background: linear-gradient(lightblue, gray);
     text-align: center;
 }
 
@@ -22,4 +22,8 @@ p{
     color: darkgreen;
     font-size: large;
 
+}
+
+h2{
+    color: darkgreen;
 }

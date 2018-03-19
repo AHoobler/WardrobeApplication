@@ -1,6 +1,8 @@
 ﻿body {
-    background: url('images/socks.jpeg');
+    background: linear-gradient(white, black);
     text-align: center;
+    
+    height: 1200px;
 
 }
 

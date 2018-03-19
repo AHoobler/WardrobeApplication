@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: dimgrey;
+    background: linear-gradient(white, yellow);
     background-size: cover;
     height: 1500px;
     color: darkgreen;
