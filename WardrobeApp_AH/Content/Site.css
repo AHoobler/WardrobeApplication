@@ -28,3 +28,20 @@ h1,
 h2{
     font-family: 'Great Vibes', cursive!important; 
 }
+
+a:hover {
+    color: teal;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: teal;
+}
+
+.navbar-inverse .navbar-brand {
+    color: slategrey;
+}
+
+a.navbar-brand {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: xx-large;
+}
