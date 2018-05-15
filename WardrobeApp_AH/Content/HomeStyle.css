@@ -1,5 +1,4 @@
 ﻿body {
-    background: linear-gradient(white, black);
     text-align: center;
     
     height: 1200px;
@@ -11,8 +10,10 @@
 
 }
 
-h1{
+p.title {
     color: darkgreen;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 100px;
 }
 
 img{

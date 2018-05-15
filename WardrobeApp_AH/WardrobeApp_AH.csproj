@@ -199,6 +199,7 @@
     <Content Include="Content\BottomStyle.css" />
     <Content Include="Content\DetailsStyle.css" />
     <Content Include="Content\HomeStyle.css" />
+    <Content Include="Content\images\background-blur-bokeh-220067.jpg" />
     <Content Include="Content\images\bwshirts.jpeg" />
     <Content Include="Content\images\cableknit.jpg" />
     <Content Include="Content\images\crocs.jpg" />
